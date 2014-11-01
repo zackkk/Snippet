@@ -3,6 +3,7 @@
 	http://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/
  */
 
+// ask: input? output? <head / root>
 
 #include<iostream>
 using namespace std;
@@ -38,7 +39,7 @@ public:
 		return root;
 	}
 
-	node *convertBSTtoLLN(node *root){
+	node *convertBSTtoBLN(node *root){
 		if(root == nullptr) return nullptr;
 		node *head = helper(root);
 		while(head->left != nullptr) head = head->left;
@@ -61,7 +62,7 @@ int main(){
 	b->right = e;
 	c->left = f;
 	c->right = g;
-	node *head = obj->convertBSTtoLLN(a);
+	node *head = obj->convertBSTtoBLN(a);
 	while(head != nullptr){
 		cout << head->data << " ";
 		head = head->right;
