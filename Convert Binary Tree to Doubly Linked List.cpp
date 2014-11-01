@@ -1,6 +1,11 @@
 /*
 	Facebook interview quesion
 	http://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/
+
+	Given a Binary Tree (Bt), convert it to a Doubly Linked List(DLL). 
+	The left and right pointers in nodes are to be used as previous and next pointers respectively in converted DLL. 
+	The order of nodes in DLL must be same as Inorder of the given Binary Tree. 
+	The first node of Inorder traversal (left most node in BT) must be head node of the DLL.
  */
 
 // ask: input? output? <head / root>
@@ -20,6 +25,9 @@ struct node{
 
 class solution_fbcbt {
 public:
+
+	//  convert left subtree and right subtree to doubly linked list recursively
+	//  then link them with the root
 	node* helper(node* root) {
 		if(root == nullptr) return nullptr;
 
@@ -39,6 +47,7 @@ public:
 		return root;
 	}
 
+	// return head instead of root
 	node *convertBSTtoBLN(node *root){
 		if(root == nullptr) return nullptr;
 		node *head = helper(root);
