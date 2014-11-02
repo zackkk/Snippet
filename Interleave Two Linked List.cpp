@@ -72,6 +72,7 @@ int main(){
 	e->next = f;
 
 	/***** can't test them at the same time *****/
+
 	//node *n = obj->interleaveTwoLinkedList_recursive(a, e);
 	//obj->printLinkedList(n);
 	node *n = obj->interleaveTwoLinkedList_iterative(a, e);
