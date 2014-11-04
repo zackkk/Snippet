@@ -5,7 +5,6 @@
 	output:
 		E F A D C B
  */
-
 #include<iostream>
 #include<vector>
 using namespace std;
