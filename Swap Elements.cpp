@@ -1,3 +1,7 @@
+/*
+	Facebook Interview Question
+	Given a random array, put all zeros at the end of array, return the number of non-zeros.
+ */
 
 #include<iostream>
 #include<vector>
