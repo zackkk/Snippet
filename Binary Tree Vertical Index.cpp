@@ -1,13 +1,13 @@
 /* Facebook Interview Quesion
-		a
+	    a
 	   / \
-      b   c
+          b   c
 	 / \   \
-    d   g   z
+        d   g   z
 	 \     /
 	  e   i
 	     /
-		q
+            q
 	   /
 	  x
 	 /
@@ -15,9 +15,9 @@
 
 	print: dy
 	       bex
-		   agq
-		   ci
-		   z
+	       agq
+	       ci
+	       z
 
  */
 
