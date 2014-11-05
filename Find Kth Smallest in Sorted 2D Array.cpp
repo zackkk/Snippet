@@ -60,6 +60,7 @@ public:
 	}
 };
 
+/*
 int main(){
 	solution_fbks *obj = new solution_fbks();
 	int matrix[4][4] = {{10, 20, 30, 40},
@@ -71,3 +72,4 @@ int main(){
 	cout << obj->findKthSmallest(matrix, 4, 7) << endl;
 	return 0;
 }
+*/
