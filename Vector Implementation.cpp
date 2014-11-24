@@ -4,7 +4,9 @@ using namespace std;
 /* const at the end of a function: 
 		tells that the method is a "const member function"
 		which does not modify any member variables of the class
- */
+*/
+
+// use shallow copy in copy constructor & assignment operator would fail the assertions.
 
 template <typename Object>
 class Vector{
@@ -60,7 +62,7 @@ public:
 		delete []oldObjects;
 	}
 
-	/********** index, back **********/
+	/********** address operator **********/
 	Object& operator[] (int index){
 		return objects[index];
 	}
